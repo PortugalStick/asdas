@@ -134,7 +134,7 @@ local ebcount = 0
 local graphLines = {}
 local lastPos = currentCamera.ViewportSize.Y-90
 
-local HitSoundType = 5633695679
+local HitSoundType = 4817809188
 local KillSoundType = 937885646
 ------------------------------------ GUI STUFF ------------------------------------
 local watermark = Instance.new("ScreenGui")
