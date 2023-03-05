@@ -1368,7 +1368,7 @@ Options.hit_hitsoundtype:OnChanged(function()
     elseif Options.hit_hitsoundtype.Value == "Skeet" then
         HitSoundType = 4817809188
     elseif Options.hit_hitsoundtype.Value == "Neverlose" then
-        HitSoundType = 6534948092
+        HitSoundType = 12693624256
     elseif Options.hit_hitsoundtype.Value == "Minecraft" then
         HitSoundType = 535716488
     end
