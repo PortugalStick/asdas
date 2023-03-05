@@ -12,7 +12,7 @@ Library:Notify('Loading UI...');
 wait(3)
 ------------------------------------ WINDOW -----------------------------------
 local Window = Library:CreateWindow({
-    Title = 'pepsi.club',
+    Title = 'AllahWare',
     Center = true, 
     AutoShow = true,
 })
@@ -1356,21 +1356,21 @@ Options.hit_hitsoundtype:OnChanged(function()
     if Options.hit_hitsoundtype.Value == "Bameware" then
         HitSoundType = 3124331820
     elseif Options.hit_hitsoundtype.Value == "Bell" then
-        HitSoundType = 6534947240
+        HitSoundType = 360703519
     elseif Options.hit_hitsoundtype.Value == "Bubble" then
-        HitSoundType = 6534947588
+        HitSoundType = 5852470908
     elseif Options.hit_hitsoundtype.Value == "Pick" then
-        HitSoundType = 1347140027    
+        HitSoundType = 3199238628    
     elseif Options.hit_hitsoundtype.Value == "Pop" then
-        HitSoundType = 198598793
+        HitSoundType = 1289263994
     elseif Options.hit_hitsoundtype.Value == "Rust" then
-        HitSoundType = 1255040462 
+        HitSoundType = 5043539486 
     elseif Options.hit_hitsoundtype.Value == "Skeet" then
-        HitSoundType = 5633695679
+        HitSoundType = 4817809188
     elseif Options.hit_hitsoundtype.Value == "Neverlose" then
         HitSoundType = 6534948092
     elseif Options.hit_hitsoundtype.Value == "Minecraft" then
-        HitSoundType = 4018616850
+        HitSoundType = 535716488
     end
 end)
 
