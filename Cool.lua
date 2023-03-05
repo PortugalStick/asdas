@@ -187,7 +187,7 @@ Text.Position = UDim2.new(0.0230768919, 0, 0, 0)
 Text.Size = UDim2.new(0.48046875, 0, 1, 0)
 Text.ZIndex = 4
 Text.Font = Enum.Font.RobotoMono
-Text.Text = "pepsi.club | user"
+Text.Text = "Allahware | user"
 Text.TextColor3 = C3(65025, 65025, 65025)
 Text.TextSize = 14.000
 Text.TextStrokeTransparency = 0.000
@@ -1445,7 +1445,7 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
 
 local OthersSettings = Tabs['UI Settings']:AddRightGroupbox('Others')
 
-OthersSettings:AddInput('uinamechange', {Default = 'pepsi.club', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
+OthersSettings:AddInput('uinamechange', {Default = 'Allahware', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
 Options.uinamechange:OnChanged(function()
     Window:SetWindowTitle(Options.uinamechange.Value)
 end)
@@ -2317,5 +2317,5 @@ runService.RenderStepped:Connect(function()
     do Misc() end
 end)
 
-Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to pepsi.club!');
+Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to AllahWare!');
 Library:Notify("Took to load "..string.format("%.5f", tick() - LoadingTime).." seconds.");
