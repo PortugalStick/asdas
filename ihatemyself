@@ -48,3 +48,5 @@ end)
 MainSection:NewButton("tp to finger (not tested)", "ButtonInfo", function()
 for i = 1, 500 do
 fireproximityprompt(workspace.Game_FX.Vessel_Finger.Finger.Collect)
+end
+end)
