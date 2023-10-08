@@ -30,7 +30,7 @@ MainSection:NewButton("tp to clan spin", "ButtonInfo", function()
     end
 end)
 
-MainSection:NewButton("1clan prompt", "ButtonInfo", function()
+MainSection:NewButton("clan prompt", "ButtonInfo", function()
     for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
         fireproximityprompt(workspace.Game_FX.ClanSpinOrb.ClanSpinOrb.Prompt)
     end
