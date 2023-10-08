@@ -1,0 +1,52 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/kav"))()
+local Window = Library.CreateLib("I hate myself", "DarkTheme")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Tp to curse spin", "ButtonInfo", function()
+    local targetPosition = workspace.Game_FX.CurseSpinOrb.CurseSpinOrb.Position -- Target position to teleport to
+local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+
+if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+    humanoidRootPart.CFrame = CFrame.new(targetPosition)
+end
+end)
+
+MainSection:NewButton("prompt", "ButtonInfo", function()
+    for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.CurseSpinOrb.CurseSpinOrb.Prompt)
+    end
+end)
+
+MainSection:NewButton("tp to clan spin", "ButtonInfo", function()
+    local targetPosition = workspace.Game_FX.ClanSpinOrb.CurseSpinOrb.Position -- Target position to teleport to
+    local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+    end
+end)
+
+MainSection:NewButton("clan prompt", "ButtonInfo", function()
+    for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.ClanSpinOrb.CurseSpinOrb.Prompt)
+    end
+end)
+
+MainSection:NewButton("tp to finger (not tested)", "ButtonInfo", function()
+    local targetPosition = workspace.Game_FX.Vessel_Finger.Vessel_Finger.Position -- Target position to teleport to
+    local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
+end
+end)
+
+MainSection:NewButton("finger prompt (not tested)", "ButtonInfo", function()
+    for i = 1, 200 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.Vessel_Finger.Vessel_Finger.Prompt)
+    end
+end)
