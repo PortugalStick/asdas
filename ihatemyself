@@ -45,8 +45,15 @@ MainSection:NewButton("tp to finger (not tested)", "ButtonInfo", function()
 end
 end)
 
-MainSection:NewButton("finger prompt (not tested)", "ButtonInfo", function()
+MainSection:NewButton("new finger prompt (not tested)", "ButtonInfo", function()
     for i = 1, 200 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
         fireproximityprompt(workspace.Game_FX.Vessel_Finger.Vessel_Finger.Prompt)
     end
 end)
+
+MainSection:NewButton("finger prompt (not tested)", "ButtonInfo", function()
+    for i = 1, 200 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.Vessel_Finger.Vessel_Finger.Finger.Collect)
+    end
+end)
+
