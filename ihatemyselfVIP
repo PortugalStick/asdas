@@ -37,18 +37,18 @@ MainSection:NewButton("clan prompt", "ButtonInfo", function()
 end)
 
 MainSection:NewButton("tp to finger (not tested)", "ButtonInfo", function()
-    local targetPosition = workspace.Game_FX.Vessel_Finger.Finger.Position -- Target position to teleport to
-local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-
-if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
-    humanoidRootPart.CFrame = CFrame.new(targetPosition)
+    local targetPosition = workspace.Game_FX.Vessel_Finger.Vessel_Finger.Position -- Target position to teleport to
+    local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+        humanoidRootPart.CFrame = CFrame.new(targetPosition)
 end
 end)
 
-MainSection:NewButton("get finger (thx to pepzi)", "ButtonInfo", function()
-for i = 1, 500 do
-fireproximityprompt(workspace.Game_FX.Vessel_Finger.Finger.Collect)
-end
+MainSection:NewButton("finger prompt (not tested)", "ButtonInfo", function()
+    for i = 1, 200 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.Vessel_Finger.Vessel_Finger.Prompt)
+    end
 end)
 --Expirimental
 
@@ -59,14 +59,14 @@ ExpirementalSection:NewToggle("TP and get clan orb", "ToggleInfo", function(stat
     if state then
         while true do
             wait(0.1) -- so the game doesn't crash
-            local targetPosition = workspace.Game_FX.ClanSpinOrb.ClanSpinOrb.Position -- Target position to teleport to
+            local targetPosition = workspace.Game_FX.ClanSpinOrb.CurseSpinOrb.Position -- Target position to teleport to
     local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
     
     if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
         humanoidRootPart.CFrame = CFrame.new(targetPosition)
     end
     for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
-        fireproximityprompt(workspace.Game_FX.ClanSpinOrb.ClanSpinOrb.Prompt)
+        fireproximityprompt(workspace.Game_FX.ClanSpinOrb.CurseSpinOrb.Prompt)
     end
             end
     else
@@ -90,6 +90,25 @@ end
     for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
         fireproximityprompt(workspace.Game_FX.CurseSpinOrb.CurseSpinOrb.Prompt)
     end
+            end
+    else
+       
+    end
+end)
+
+ExpirementalSection:NewToggle("TP and get fingers", "ToggleInfo", function(state)
+    if state then
+        while true do
+            wait(0.1) -- so the game doesn't crash
+            local targetPosition = workspace.Game_FX.Vessel_Finger.Finger.Position -- Target position to teleport to
+            local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+            
+            if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+                humanoidRootPart.CFrame = CFrame.new(targetPosition)
+            end
+            for i = 1, 500 do
+                fireproximityprompt(workspace.Game_FX.Vessel_Finger.Finger.Collect)
+                end
             end
     else
        
