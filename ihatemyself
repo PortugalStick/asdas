@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/kav"))()
-local Window = Library.CreateLib("I hate myself (credits to LazyHub and Pepzi)", "DarkTheme")
+local Window = Library.CreateLib("I hate myself credits to LazyHub and Pepzi", "DarkTheme")
 
 --Main
 local Main = Window:NewTab("Main")
