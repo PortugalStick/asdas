@@ -69,22 +69,3 @@ if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
     humanoidRootPart.CFrame = CFrame.new(targetPosition)
 end
 end)
-
-ExpirementalSection:NewButton("Tp and use misc orb (not tested)", "ButtonInfo", function()
-local lp = game.Players.LocalPlayer
-local function collect3()
-    for i = 1, 1000 do
-        fireproximityprompt(workspace.Game_FX.MiscOrb.MiscOrb.Prompt)
-    end
-end
-
-for i,v in pairs(workspace.Game_FX:GetChildren()) do
-    if v:IsA("Model") and v.Name == "MiscOrb" and v:FindFirstChild("MiscOrb")then
-        local oldCframe = lp.Character.HumanoidRootPart.CFrame
-        lp.Character.HumanoidRootPart.CFrame = v.MiscOrb.CFrame
-        wait(0.1)
-        collect3()
-        wait(0.4)
-        lp.Character.HumanoidRootPart.CFrame = oldCframe
-    end
-end
