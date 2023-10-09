@@ -50,3 +50,18 @@ for i = 1, 500 do
 fireproximityprompt(workspace.Game_FX.Vessel_Finger.Finger.Collect)
 end
 end)
+
+MainSection:NewButton("MiscOrb prompt", "ButtonInfo", function()
+    for i = 1, 1000 do -- Get Spins Any mount by change number (To use. use when u at the hold e thing then execute if too much u may crashes)
+        fireproximityprompt(workspace.Game_FX.MiscOrb.MiscOrb.Prompt)
+    end
+end)
+
+MainSection:NewButton("Tp to Misc Orb", "ButtonInfo", function()
+    local targetPosition = workspace.Game_FX.MiscOrb.MiscOrb.Position -- Target position to teleport to
+local humanoidRootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+
+if humanoidRootPart and humanoidRootPart:IsA("BasePart") then
+    humanoidRootPart.CFrame = CFrame.new(targetPosition)
+end
+end)
